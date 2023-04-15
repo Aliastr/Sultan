@@ -1,0 +1,147 @@
+main{
+    margin: 0 14.17%;
+}
+.hzlFilter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    .hzlItem{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #3F4E65;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+        border-radius: 10px;
+        padding: 18px 23px 18px 23px;
+    }
+}
+.flexMain{
+    display: flex;
+    margin-top: 27px;
+    gap: 108px;
+    .flexItem{
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: space-between;
+    }
+    .filter{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3F4E65;
+        .filterFlex{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .titleFilter{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                color: #111111;
+            }
+            .priceRange{
+                display: flex;
+                gap: 10px;
+                input {
+                    width: 100px;
+                    height: 23px;
+                    text-align: center;
+                    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 1000px;
+                    border: none;
+                }
+            }
+            .filterChekBox{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: left;
+                align-items: flex-start;
+                input{
+                    border: 0.5px solid #3F4E65;
+                    border-radius: 1px;
+                }
+                label{
+                    margin-left: 10px;
+                }
+            }
+            .searchDelimiter{
+                opacity: 0.3;
+                border: 1px dashed #3F4E65;
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 21px;
+        width: 100%;
+    .item{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+        padding: 45px 23px 26px 23px;
+        gap: 10px;
+        margin: 0;
+        width: calc((100% - 63px) / 3);
+        .imgItem{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            max-width: 200px;
+        }
+        .itemFlex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .inCart{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 184px;
+                height: 59px;
+                background: #FFC85E;
+                border-radius: 79px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+
+
+
+    .aceptFilter{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .formButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 169px;
+        height: 59px;
+        background: #FFC85E;
+        border-radius: 79px;
+        color: white;  
+    }
+    }
+}
+  
