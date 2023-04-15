@@ -1,0 +1,98 @@
+main{
+    margin: 0 14.17%;
+    img{
+        cursor: pointer;
+    }
+.cart{
+    .cartItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 50px 0 50px 0;
+        border-top: 1px dashed rgba(63, 78, 101, 0.3);
+        border-bottom: 1px dashed rgba(63, 78, 101, 0.3);
+        .cartItemImg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 281px;
+            min-height: 191px;
+            img{
+                max-width: 281px;
+                max-height: 191px;
+            }
+        }
+        .cartItemDesk{
+            display: flex;
+            flex-direction: column;
+            width: 480px;
+            gap: 10px;
+            .cartItemDeskDesk{
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 150%;
+                color: #3F4E65;
+            }
+            .cartItemDeskTitle{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 36px;
+                color: #111111;
+            }
+        }
+        .cartItemQty{
+            display: flex;
+            justify-content: center;
+            gap: 21px;
+            align-items: center;
+            padding: 0 44px 0 44px;
+            button{
+                border: none;
+                background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+                border-radius: 1000px;
+                width: 34px;
+                height: 23px;
+                cursor: pointer;
+            }
+        }
+        .cartItemPrice{
+            width: 113px;
+            padding: 0 44px 0 44px;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 130%;
+            color: #111111;
+            white-space: nowrap;
+        }
+    }
+}
+.flexSubm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cartSubmit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        height: 59px;
+        background: #FFC85E;
+        border-radius: 79px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+      .totalPrice{
+        width: 154px;
+        height: 39px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 130%;
+        color: #111111;
+      }
+  }
+
+}
