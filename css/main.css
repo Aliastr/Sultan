@@ -257,6 +257,9 @@ main .poprProds {
           flex-direction: column;
   margin: 0 14.4%;
 }
+main .poprProds :first-child {
+  margin-bottom: 50px;
+}
 main .poprProds .items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,15 +351,7 @@ main .prodsCategory .prodsCategoryFlex {
           align-items: stretch;
 }
 main .prodsCategory .prodsCategoryFlexItem {
-  background: rgba(188, 165, 120, 0.1);
-  -webkit-box-shadow: 0px 14px 39px -3px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 14px 39px -3px rgba(0, 0, 0, 0.06);
-  border-radius: 20px;
   width: calc((100% - 120px) / 5);
-}
-main .prodsCategory .prodsCategoryFlexItem img {
-  margin-top: 37px;
-  margin-right: 25px;
 }
 main .stock {
   position: relative;
@@ -568,7 +563,10 @@ footer .fst {
   width: 320px;
   gap: 15px;
 }
-footer .fst input {
+footer .fst .obr {
+  position: relative;
+}
+footer .fst .obr input {
   height: 59px;
   width: 90%;
   padding: 13px 10px 13px 20px;
@@ -577,6 +575,7 @@ footer .fst input {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
+  border: none;
 }
 footer .snd {
   display: -webkit-box;
@@ -587,4 +586,151 @@ footer .snd {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+footer .snd :first-child {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  main {
+    width: 100%;
+    gap: 50px;
+  }
+  main .mainBanner {
+    width: 100%;
+  }
+  main .mainBanner .mainBannerDeskFx {
+    margin: 0 15px;
+    width: 100%;
+    gap: 10px;
+  }
+  main .mainBanner .mainBannerDeskFx .mainBannerDeskTitle {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 150%;
+  }
+  main .mainBanner .mainBannerDeskFx .inCart {
+    display: none;
+  }
+  main .mainBanner .mainBannerDeskFx h1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+  }
+  main .mainBanner .mainBannerDeskFx .mainBannerDeskPromo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 150px;
+    gap: 10px;
+  }
+  main .mainBanner .mainBannerDeskFx .mainBannerDeskPromo .mainBannerDeskPromoItem {
+    color: #3F4E65;
+    width: 100%;
+  }
+  main .mainBanner .mainBannerDeskFx .mainBannerDeskPromo .mainBannerDeskPromoItem .mainBannerDeskPromoDot {
+    width: 18px;
+    height: 18px;
+  }
+  main .poprProds {
+    margin: 50px 15px;
+  }
+  main .poprProds :first-child {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 25px;
+  }
+  main .poprProds .items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .poprProds .items .item {
+    display: none;
+  }
+  main .poprProds .items .itemAd {
+    display: block;
+  }
+  main .prodsCategory {
+    width: 100%;
+    margin: 0 15px;
+  }
+  main .prodsCategory .prodsCategoryFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .prodsCategory .prodsCategoryFlex .prodsCategoryFlexItem {
+    min-width: 100px;
+  }
+  main .prodsCategory .prodsCategoryFlex .prodsCategoryFlexItem img {
+    width: 140px;
+    height: 166px;
+  }
+  main .stock {
+    margin: 0 10px;
+    width: 100%;
+  }
+  main .stock img {
+    width: 100%;
+  }
+  main .stock .stockDesk {
+    gap: 5px;
+  }
+  main .stock .stockDesk .stockDeskNote {
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 185%;
+    letter-spacing: 0.2em;
+    margin-bottom: 0;
+  }
+  main .stock .stockDesk .stockDeskTitle {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+  main .stock .stockDesk .stockDeskСondition {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    margin-bottom: 10px;
+  }
+  main .stock .stockSlide {
+    width: 100%;
+  }
+  main .stock .stockSlide .stockSlideItem {
+    border: 15px;
+  }
+  main .brands .brandsSlide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .brands .brandsSlide .slideItem {
+    display: none;
+  }
+  main .brands .brandsSlide .siActive {
+    display: block;
+  }
+  main .mainContacts {
+    display: none;
+  }
+}
+footer {
+  display: none;
 }
