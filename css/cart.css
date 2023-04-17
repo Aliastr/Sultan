@@ -129,3 +129,74 @@ main .flexSubm .totalPrice {
   line-height: 130%;
   color: #111111;
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    display: none;
+  }
+  .h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  main {
+    margin: 0 10px;
+  }
+  main .cart .cartItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 0;
+  }
+  main .cart .cartItem .cartItemDesk {
+    width: 100%;
+  }
+  main .cart .cartItem .cartItemDesk .cartItemDeskTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  main .cart .cartItem .cartItemMove {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  main .cart .cartItem .cartItemMove .cartItemQty {
+    padding: 0;
+  }
+  main .cart .cartItem .cartItemMove .cartItemPrice {
+    padding: 0;
+  }
+  main .cart .cartItem .cartItemMove img {
+    width: 59px;
+    height: 59px;
+  }
+  main .flexSubm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  main .flexSubm .totalPrice {
+    width: auto;
+  }
+  .footer {
+    display: none;
+  }
+}

@@ -96,3 +96,62 @@ main{
   }
 
 }
+@media screen and (max-width: 600px){
+    .header{
+        display: none;
+    }
+    .h2{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    main{
+        margin: 0 10px;
+
+        .cart{
+            .cartItem{
+                flex-direction: column;
+                padding: 20px 0;
+                .cartItemDesk{
+                    width: 100%;
+                    .cartItemDeskTitle{
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+                .cartItemMove{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+                    .cartItemQty{
+                        padding: 0;
+                    }
+                    .cartItemPrice{
+                        padding: 0;
+                    }
+                    img{
+                        width: 59px;
+                        height: 59px;
+                    }
+                }
+            }
+        }
+        .flexSubm{
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 50px;
+            .totalPrice{
+                width: auto;
+            }
+        }
+    }
+
+    .footer{
+        display: none;
+    }
+}
