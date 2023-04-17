@@ -19,6 +19,18 @@ main .cart .cartItem {
   border-top: 1px dashed rgba(63, 78, 101, 0.3);
   border-bottom: 1px dashed rgba(63, 78, 101, 0.3);
 }
+main .cart .cartItem .cartItemMove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
 main .cart .cartItem .cartItemImg {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -279,3 +279,51 @@ main {
 .flexMain .items .pages :last-child {
   margin-left: 26px;
 }
+
+@media screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+  main {
+    margin: 10px;
+    gap: 37px;
+  }
+  main h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin: 0 0 -15px 0;
+  }
+  main .hzlFilter {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0;
+  }
+  main .hzlFilter .hzlItem {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+  }
+  main .flexMain {
+    width: 100%;
+  }
+  main .flexMain .filter {
+    display: none;
+  }
+  main .flexMain .items .item {
+    width: 100%;
+  }
+  main .flexMain .items .pages {
+    margin-top: 35px;
+  }
+  footer {
+    display: none;
+  }
+}

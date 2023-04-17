@@ -189,12 +189,49 @@ main{
             margin-left: 26px;
         }
     }
-
-
-
-
-
-
     }
 }
   
+@media screen and (max-width: 600px){
+    header{
+        display: none;
+    }
+    main{
+        margin: 10px;
+        gap: 37px;
+        h1{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            text-transform: uppercase;
+            margin: 0 0 -15px 0;
+        }
+        .hzlFilter{
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0;
+            .hzlItem{
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+        .flexMain{
+            width: 100%;
+            .filter{
+                display: none;
+            }
+            .items{
+                .item{
+                    width: 100%;
+                }
+                .pages{
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+    footer{
+        display: none;
+    }
+}
